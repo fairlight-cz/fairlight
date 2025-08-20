@@ -1,11 +1,26 @@
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'),
+    url('fonts/roboto-variablefont_wdthwght-webfont.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url('fonts/robotocondensed-variablefont_wght-webfont.woff2') format('woff2');
+}
+
 body {
     background-color: #121212;
     color: #fff;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Arial', sans-serif;
 }
 
 .navbar .logo {
     margin-right: 0.8rem;
+}
+.navbar-brand {
+    font-family: 'Roboto Condensed', 'Arial', sans-serif;
 }
 
 /* Subtle dark texture background */
