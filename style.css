@@ -1,6 +1,11 @@
 body {
     background-color: #121212;
     color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar .logo {
+    margin-right: 0.8rem;
 }
 
 /* Subtle dark texture background */
@@ -74,3 +79,37 @@ body {
     left: -38px;
 }
 
+/* Lists */
+.timeline-item ul {
+    list-style-type: "✅ ";
+}
+.timeline-item ul li {
+    margin-bottom: 0.6rem;
+}
+
+/* Mobile-friendly timeline */
+@media (max-width: 768px) {
+    .timeline {
+        padding-left: 0; /* remove half-width alignment */
+    }
+
+    .timeline::before {
+        left: 20px; /* push the vertical line to the left */
+    }
+
+    .timeline-item {
+        width: 100%;
+        margin-left: 40px; /* leave space for line + dot */
+    }
+
+    .timeline-item.left,
+    .timeline-item.right {
+        left: 0 !important; /* reset positioning */
+    }
+
+    .timeline-item.left::before,
+    .timeline-item.right::before {
+        left: -40px; /* position dots on the line */
+        right: auto;
+    }
+}
