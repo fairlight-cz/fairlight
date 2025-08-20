@@ -16,6 +16,12 @@ body {
     font-family: 'Roboto', 'Arial', sans-serif;
 }
 
+@media (max-width: 420px) {
+    .xs-hide {
+        display: none;
+    };
+}
+
 .navbar .logo {
     margin-right: 0.8rem;
 }
